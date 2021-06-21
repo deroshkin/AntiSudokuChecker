@@ -68,7 +68,7 @@ function checkRow(r) {
 
     if (missing.length > 1) {
         document.getElementById("failure").setAttribute("style", "display: block;");
-        var error = "<p>Row " + (r + 1) + " has more too many missing values:";
+        var error = "<p>Row " + (r + 1) + " has too many missing values:";
         missing.forEach(val => {
             error += " " + val;
         });
@@ -177,7 +177,7 @@ function checkCol(c) {
 
     if (missing.length > 1) {
         document.getElementById("failure").setAttribute("style", "display: block;");
-        var error = "<p>Column " + (c + 1) + " has more too many missing values:";
+        var error = "<p>Column " + (c + 1) + " has too many missing values:";
         missing.forEach(val => {
             error += " " + val;
         });
@@ -286,7 +286,7 @@ function checkBox(b) {
 
     if (missing.length > 1) {
         document.getElementById("failure").setAttribute("style", "display: block;");
-        var error = "<p>Box " + (b + 1) + " has more too many missing values:";
+        var error = "<p>Box " + (b + 1) + " has too many missing values:";
         missing.forEach(val => {
             error += " " + val;
         });
